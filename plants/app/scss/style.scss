@@ -1,0 +1,159 @@
+@import 'vars';
+@import 'libs';
+@import 'fonts';
+@import 'global';
+
+.header {
+  background-color: $bg-section;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px;
+    padding-left: 52px;
+    padding-right: 17px;
+    font-family: $inika-text;
+    font-style: normal;
+    font-size: 16px;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+
+    &-img {
+      padding-bottom: 5px;
+    }
+
+    &-text {
+      font-weight: 400;
+      line-height: 21px;
+      color: $black;
+    }
+  }
+
+  &__menu {
+    width: 497px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    font-weight: 400;
+    line-height: 50px;
+  }
+
+  &__link {
+    color: $links-nav;
+
+    &:hover {
+      cursor: pointer;
+      @extend .header__link--active;
+      transition: 0.5s;
+    }
+  }
+
+  &__link--active {
+    font-weight: 700;
+    color: $orange-text;
+  }
+}
+
+.header__welcome {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 23px;
+  padding-bottom: 97px;
+  margin-bottom: 33px;
+}
+
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  width: 545.87px;
+  margin-top: 28px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    color: $grey-text;
+
+    &-span {
+      color: $green-text;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    color: $taupe-text;
+  }
+
+  &__btn {
+    padding-top: 25px;
+  }
+}
+
+.section_button {
+  background-color: transparent;
+  border: 2px solid $orange-text;
+  border-radius: 10px;
+  width: 158.65px;
+  height: 44px;
+
+  &-text {
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: $orange-text;
+    color: #fff;
+    transition: 0.5s;
+  }
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  width: 605px;
+  height: 208px;
+
+  &__title {
+    width: 463px;
+    height: 102px;
+    font-family: 'Inika', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: $green-text;
+
+    &-span {
+      color: $orange-text;
+    }
+  }
+
+  &__text {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: $taupe-text;
+  }
+}
+
+@import 'media';
